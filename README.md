@@ -81,6 +81,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     4. Jalankan perintha php artisan serve
 
 ### Url Acces API Example
-http://localhost:8000/api/login
-http://localhost:8000/api/regrister
-http://localhost:8000/api/hasilTani/all
+	http://localhost:8000/api/login
+	http://localhost:8000/api/regrister
+	http://localhost:8000/api/hasilTani/all
