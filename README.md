@@ -62,3 +62,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Tools untuk menjalankan Laravel
+- Composer
+- PHP 7.2+
+- XAMPP
+
+##Instalasi
+
+### Clone Project
+    git clone -b web_services https://github.com/repoTAD4TRPL/FYP-10-2022.git
+
+### Setup Project
+    1. Update Composer
+       Jalankan perinhtah Composer Instal/Composer Updete di command prompt directory file laravel
+    2. Import database di phpmyadmin
+    3. Setup konfigurasi database pada file .env
+    4. Jalankan perintha php artisan serve
+
+### Url Acces API Example
+http://localhost:8000/api/login
+http://localhost:8000/api/regrister
+http://localhost:8000/api/hasilTani/all
