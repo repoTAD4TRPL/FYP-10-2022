@@ -1,1 +1,1 @@
-# Resource gambar gihubt repo-10
+# Resource gambar github repo-10
