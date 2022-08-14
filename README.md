@@ -68,7 +68,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - PHP 7.2+
 - XAMPP
 
-##Instalasi
+## Instalasi
 
 ### Clone Project
     git clone -b web_services https://github.com/repoTAD4TRPL/FYP-10-2022.git
