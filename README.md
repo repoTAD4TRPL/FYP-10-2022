@@ -77,7 +77,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     1. Update Composer
        Jalankan perinhtah Composer Instal/Composer Updete di command prompt directory file laravel
     2. Import database di phpmyadmin
-    3. Setup konfigurasi database pada file .env
+    3. Setup konfigurasi database pada file .env jika .env tidak ada silahokan copy/modifikasi file .env.example dan rename menjadi .env
     4. Jalankan perintha php artisan serve
 
 ### Url Acces API Example
