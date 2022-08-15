@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/border_bg"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img_pengemudi"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/driver_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/type_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/angkutan_umum"
+            app:layout_constraintStart_toEndOf="@+id/img_pengemudi"
+            app:layout_constraintTop_toTopOf="@+id/img_pengemudi" />
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driver"
+            app:layout_constraintStart_toStartOf="@+id/type_driver"
+            app:layout_constraintTop_toBottomOf="@+id/type_driver" />
+
+        <TextView
+            android:id="@+id/driver_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            app:layout_constraintStart_toStartOf="@+id/driver_name"
+            app:layout_constraintTop_toBottomOf="@+id/driver_name" />
+
+        <TextView
+            android:id="@+id/no_telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_hp"
+            app:layout_constraintStart_toStartOf="@+id/driver_address"
+            app:layout_constraintTop_toBottomOf="@+id/driver_address" />
+
+        <TextView
+            android:id="@+id/muatan_tersedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muatan Tersedia"
+            app:layout_constraintStart_toStartOf="@+id/muatan"
+            app:layout_constraintTop_toBottomOf="@+id/muatan" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            app:layout_constraintStart_toStartOf="@+id/muatan_tersedia"
+            app:layout_constraintTop_toBottomOf="@+id/muatan_tersedia" />
+
+        <TextView
+            android:id="@+id/jarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak"
+            app:layout_constraintStart_toStartOf="@+id/status"
+            app:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

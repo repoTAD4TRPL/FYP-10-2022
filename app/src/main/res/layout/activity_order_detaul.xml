@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.order.OrderDetailActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_kendaraan"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_titik_penjemputan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titik Penjemputan"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_titik_penjemputan"
+            android:backgroundTint="@color/transparant_white"
+            android:layout_width="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_location"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_place"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_titik_penjemputan"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_titik_penjemputan"
+        app:layout_constraintTop_toTopOf="@+id/text_input_titik_penjemputan" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_titik_pengantaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titik Pengantaran"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_titik_penjemputan"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_titik_pengataran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/transparant_white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_location_pengantaran"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_place"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_titik_pengantaran"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_titik_pengantaran"
+        app:layout_constraintTop_toTopOf="@+id/text_input_titik_pengantaran" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_tanggal_pengataran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tanggal_pengataran"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_titik_pengantaran"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_tanggal_pengantaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="@color/transparant_white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/date_picker"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_date_range"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_tanggal_pengataran"
+        app:layout_constraintEnd_toEndOf="@+id/text_input_tanggal_pengataran"
+        app:layout_constraintTop_toTopOf="@+id/text_input_tanggal_pengataran" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_berat_produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/berat_produk"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_tanggal_pengataran"
+        android:layout_margin="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_berat_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/transparant_white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TableLayout
+        android:id="@+id/layout_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_berat_produk">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="Jarak" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text=":" />
+
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="Waktu Tempuh" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text=":" />
+
+
+            <TextView
+                android:id="@+id/jarak_tempuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="Harga" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text=":" />
+
+
+            <TextView
+                android:id="@+id/txt_total_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dip"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/text_detail_rumus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawableEnd="@drawable/ic_baseline_navigate_next"
+        android:drawableTint="@color/mapbox_blue"
+        android:visibility="gone"
+        android:text="Lihat Detail Perhitungan harga"
+        android:textColor="@color/mapbox_blue"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_table" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_order"
+        style="@style/button_theme"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Pesan Kendaraan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_detail_rumus" />
+
+    <com.sn.lib.NestedProgress
+        android:id="@+id/nestedProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:innerAnimInterpolator="linear"
+        android:background="@color/transparant_white"
+        app:innerLoaderColor="@color/orange_200"
+        app:outerAnimInterpolator="overshoot"
+        app:outerLoaderAnimDuration="1500"
+        app:outerLoaderColor="@color/orange_700" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Toba Send</string>
+    <string name="title_home">Home</string>
+    <string name="title_store">Store</string>
+    <string name="title_account">Accounts</string>
+    <string name="version">Version</string>
+    <string name="email">Email</string>
+    <string name="login">Masuk</string>
+    <string name="password">Password</string>
+    <string name="not_have_account">Belum punya akun?</string>
+    <string name="or">Atau</string>
+    <string name="forget_password">Lupa Sandi</string>
+    <string name="farmer">Petani</string>
+    <string name="buyer">Pembeli</string>
+    <string name="driver">Supir</string>
+    <string name="product_name">product_name</string>
+    <string name="product_price">product_price</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daftar_akun_pembeli">Daftar Akun Pembeli</string>
+    <string name="daftar">Daftar</string>
+    <string name="angkutan_umum">Angkutan Umum</string>
+    <string name="address">Alamat</string>
+    <string name="title_activity_detail_order">DetailOrderActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tambah_produk">Tambah Produk</string>
+    <string name="data_produk">Data Produk</string>
+    <string name="silahkan_lengkapi_data_perduk_anda">Silahkan isi data produk anda</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="jumlah_produk">Jumlah Produk (kg)</string>
+    <string name="harga_produk">Harga Produk</string>
+    <string name="kategori">Kategori</string>
+    <string name="no_telp">No. Telp</string>
+    <string name="alamat">Alamat</string>
+    <string name="upload_gambar">Upload Gambar</string>
+    <string name="fab_to_add_product">Fab to add product</string>
+    <string name="order">Pesan</string>
+    <string name="name">Nama</string>
+    <string name="account">Account</string>
+    <string name="no_hp">No HP</string>
+    <string name="no_rek">No. Rekening - Cabang (xxxxx - BRI)</string>
+    <string name="muatan">Jumlah Kapasitas Kendaraan /Kg</string>
+    <string name="status">Status</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoicGVybWFuYTQxMzEiLCJhIjoiY2wyMzlxbGRhMG1jZjNvcDdvdjVpNWFybCJ9.LI0j48U43FCOFDKoA9yx3A</string>
+    <string name="daftar_disini"> Daftar disini</string>
+    <string name="order_product">Pesan Produk</string>
+    <string name="titik_pengantaran">Titik Pengantaran</string>
+    <string name="tanggal_pengataran">Tanggal Pengantaran</string>
+    <string name="berat_produk">Berat Produk (kg)</string>
+    <string name="order_kendaraan">Pesan Kendaraan</string>
+    <string name="distance">jarak</string>
+    <string name="username">Username</string>
+    <string name="konfrimasi_password">Konfirmasi Password</string>
+    <string name="harga">Harga</string>
+    <string name="bukti_ditolak">Bukti Ditolak</string>
+    <string name="search">Cari Nama Pengemudi</string>
+    <string name="button_search">button search</string>
+    <string name="catatan">Catatan...</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="tambahkan">Tambahkan</string>
+
+    <string-array name="filter_story">
+        <item>Pilih Status</item>
+        <item>Proses</item>
+        <item>Selesai</item>
+        <item>Di terima supir</item>
+        <item>Di terima petani</item>
+        <item>Ditolak</item>
+        <item>Batal</item>
+    </string-array>
+
+    <string-array name="filter_driver">
+        <item>Pilih Kategori</item>
+        <item>Pickup</item>
+        <item>Truk</item>
+    </string-array>
+
+    <string-array name="filter_order">
+        <item>Pilih Status</item>
+        <item>Tersedia</item>
+        <item>Dalam Pesanan</item>
+    </string-array>
+
+</resources>
